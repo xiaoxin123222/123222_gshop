@@ -1,12 +1,13 @@
 <template>
-    <header class="header">
-        <slot name="left"></slot>
-        <span class="header_title">
-            <span class="header_title_text ellipsis">{{title}}</span>
-        </span>
-        <slot name="left"></slot>
-    </header>
+  <header class="header">
+    <slot name="left"></slot>
+    <span class="header_title">
+      <span class="header_title_text ellipsis">{{title}}</span>
+    </span>
+    <slot name="right"></slot>
+  </header>
 </template>
+
 
 <script>
     export default {
@@ -52,6 +53,7 @@
               color #fff
               text-align center
               .header_title_text
+                height 20px
                 font-size 20px
                 color #fff
                 display block
